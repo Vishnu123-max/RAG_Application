@@ -65,16 +65,28 @@ Do not commit `.env` files, API keys, private documents, copyrighted PDFs withou
 
 No license has been added yet. Until one is chosen, all rights remain with the respective content owners; verify document licenses before distributing any source files or data.
 
-## Repository structure
+## Project structure
 
-The committed files are at the repository root:
+The open VS Code workspace is organized as follows:
 
 ```text
 RAG_Application/
-|-- README.md
-|-- document.ipynb
-|-- pdf_loader.ipynb
-`-- requirements.txt
+|-- Notebook/
+|   |-- document.ipynb
+|   `-- pdf_loader.ipynb
+|-- data/
+|   |-- Claude_Exam_Guide.pdf
+|   |-- Netflix_Data_Engineer_interview_guidelines.pdf
+|   |-- text_files/
+|   |   |-- machine_learning.txt
+|   |   `-- python_intro.txt
+|   `-- vectorstore/
+|       |-- chroma.sqlite3
+|       `-- <collection-id>/
+|-- .venv/
+|-- my_env/
+|-- requirements.txt
+`-- README.md
 ```
 
-The `data/` directory and persistent ChromaDB vector store are created locally when documents are added and indexed. They are not committed to this repository.
+The PDFs, ChromaDB data, and Python environments are local workspace files and should not be committed to the GitHub repository.
