@@ -64,3 +64,17 @@ Do not commit `.env` files, API keys, private documents, copyrighted PDFs withou
 ## License
 
 No license has been added yet. Until one is chosen, all rights remain with the respective content owners; verify document licenses before distributing any source files or data.
+
+## Repository structure
+
+The committed files are at the repository root:
+
+```text
+RAG_Application/
+|-- README.md
+|-- document.ipynb
+|-- pdf_loader.ipynb
+`-- requirements.txt
+```
+
+The `data/` directory and persistent ChromaDB vector store are created locally when documents are added and indexed. They are not committed to this repository.
